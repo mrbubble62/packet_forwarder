@@ -278,9 +278,10 @@ static void remove_comments(char *string, const char *start_token, const char *e
             ptr = strstr(string, end_token);
             if (!ptr)
                 return;
-            for (i = 0; i < (ptr - string) + end_token_len; i++)
+            for (i = 0; i < (ptr - string) + end_token_len; i++){
                 string[i] = ' ';
-          	string = ptr + end_token_len - 1;
+	    }
+            string = ptr + end_token_len - 1;
         }
         escaped = 0;
         string++;
