@@ -525,7 +525,7 @@ void stats_report() {
      	}
 
 	printf("### [ CONNECTIONS ] ###\n");
-	transport_status(i);
+	transport_status();
 
         /* generate a JSON report (will be sent to server by upstream thread) */
 
